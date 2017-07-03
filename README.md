@@ -4,7 +4,7 @@
 ![N|Solid](http://www.hashin.in/hash/_layout/images/expertise/cpp.png)
 
 ## About
-All files are heavily documented to assist in explaination and understanding of functionality.
+All files are heavily documented to assist in explanation and understanding of functionality.
 ##### Word Objects (WordObj.h and WordObj.cpp)
 Creates a base class for holding Objects. The objects are called WordObj. 
 Each WordObj contains: (string, bool, string)
