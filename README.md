@@ -25,6 +25,6 @@ All of these function are data return types. With return types the objects can b
 - https://gist.github.com/zachwhaley/9442902 (refer to)
 
 ##### main.cpp
-The only included in the main should be "VectorObject.h"
+The only #include in the main should be "VectorObject.h"
 The main is simply used to test output. Currently it takes in a string, converts to string vector, then to WordObj Vector, gets duplicated and conveted to piglatin vector, converts to string, converts string to lowercase, and prints the output using cout.
 
