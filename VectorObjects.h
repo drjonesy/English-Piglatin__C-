@@ -6,12 +6,14 @@
 #include <algorithm>
 #include "WordObj.h"
 #include "Piglatin.h"
+#include "English.h"
 
 using namespace std;
 
 vector<string> splitStringToVector(string, const char*);
 vector<WordObj> vectorOfWordObjects(vector<string>);
 vector<WordObj> engToPiglatin(vector<WordObj>);
+vector<WordObj> pigToEnglish(vector<WordObj>);
 string wordsToString(vector<WordObj>);
 string strToLower(string);
 
@@ -66,13 +68,22 @@ vector<WordObj> engToPiglatin(vector<WordObj> v) {
 }//end engToPiglatin
 
 //piglatin to english
-
+vector<WordObj> pigToEnglish(vector<WordObj> v) {
+	 for (size_t i = 0; i < v.size(); i++) {
+		string str = v.at(i).getWord();
+		v.at(i).setWord(pig_to_english(str));
+    }
+	return v;
+}//end pigToEnglish
 
 // to string with special characters (still capitalized)
 string wordsToString(vector<WordObj> v){
 	string text = "";
 	for(size_t i = 0; i < v.size(); i++){
+		//text = current index word
 		text += v.at(i).getWord();
+		//remove - hyphen
+		text.erase(find(text.begin(), text.end(), '-'));
 		//append lastChar if contains character
 		if(v.at(i).getLastChar() != ""){
 			text += v.at(i).getLastChar();
