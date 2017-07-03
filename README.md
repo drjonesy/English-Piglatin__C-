@@ -18,6 +18,7 @@ All of these function are data return types. With return types the objects can b
 - vector<string> splitStringToVector(string, const char*);
 - vector<WordObj> vectorOfWordObjects(vector<string>);
 - vector<WordObj> engToPiglatin(vector<WordObj>);
+- vector<WordObj> pigToEnglish(vector<WordObj>);
 - string wordsToString(vector<WordObj>);
 - string strToLower(string);
 
