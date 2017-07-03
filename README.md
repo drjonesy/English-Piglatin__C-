@@ -29,4 +29,6 @@ All of these function are data return types. With return types the objects can b
 The only #include in the main should be "VectorObject.h"
 The main is simply used to test output. Currently it takes in a string, converts to string vector, then to WordObj Vector, gets duplicated and conveted to piglatin vector, converts to string, converts string to lowercase, and prints the output using cout.
 
-###### Purdue Piglatin Guidelines(http://web.ics.purdue.edu/~morelanj/RAO/prepare2.html)
+###### Purdue Piglatin Guidelines
+(http://web.ics.purdue.edu/~morelanj/RAO/prepare2.html)
+Read: Decoding Pig Latin 
